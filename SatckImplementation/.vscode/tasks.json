@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C/C++: Build Active File with g++",
+            "type": "shell",
+            "command": "C:\\mingw\\msys64\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-g",                        // للـ debugging info
+                "-std=c++17",                // يفضل تحديد نسخة C++
+                "${file}",                   // الملف الحالي
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compile current C++ file using g++"
+        }
+    ]
+}

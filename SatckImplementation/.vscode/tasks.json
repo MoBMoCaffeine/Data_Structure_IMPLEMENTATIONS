@@ -6,9 +6,9 @@
             "type": "shell",
             "command": "C:\\mingw\\msys64\\mingw64\\bin\\g++.exe",
             "args": [
-                "-g",                        // للـ debugging info
-                "-std=c++17",                // يفضل تحديد نسخة C++
-                "${file}",                   // الملف الحالي
+                "-g",                        
+                "-std=c++17",              
+                "${file}",                    
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
